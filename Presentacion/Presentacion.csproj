@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0835A11-D758-4D86-8315-2EE6809834D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\AppChat\AppChat\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DOTA.cs" />
+    <Compile Include="Frm404.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm404.Designer.cs">
+      <DependentUpon>Frm404.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdministracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdministracion.Designer.cs">
+      <DependentUpon>FrmAdministracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutor.Designer.cs">
+      <DependentUpon>FrmAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBackup.Designer.cs">
+      <DependentUpon>FrmBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBitacora.Designer.cs">
+      <DependentUpon>FrmBitacora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCalificador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCalificador.Designer.cs">
+      <DependentUpon>FrmCalificador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCategoria.Designer.cs">
+      <DependentUpon>FrmCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDashboard.Designer.cs">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInventario.Designer.cs">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLibro.Designer.cs">
+      <DependentUpon>FrmLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLibroA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLibroA.Designer.cs">
+      <DependentUpon>FrmLibroA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPais.Designer.cs">
+      <DependentUpon>FrmPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPreload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPreload.Designer.cs">
+      <DependentUpon>FrmPreload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporte.Designer.cs">
+      <DependentUpon>FrmReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuario.Designer.cs">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm404.resx">
+      <DependentUpon>Frm404.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdministracion.resx">
+      <DependentUpon>FrmAdministracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutor.resx">
+      <DependentUpon>FrmAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBackup.resx">
+      <DependentUpon>FrmBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBitacora.resx">
+      <DependentUpon>FrmBitacora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCalificador.resx">
+      <DependentUpon>FrmCalificador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCategoria.resx">
+      <DependentUpon>FrmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDashboard.resx">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInventario.resx">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLibro.resx">
+      <DependentUpon>FrmLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLibroA.resx">
+      <DependentUpon>FrmLibroA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPais.resx">
+      <DependentUpon>FrmPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPreload.resx">
+      <DependentUpon>FrmPreload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporte.resx">
+      <DependentUpon>FrmReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuario.resx">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{dc6d6341-bcec-4b63-b7f7-bcec81c9b4b1}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{5ebe6048-98d8-4244-bcdf-bdf88bd10de7}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\About_52px.png" />
+    <Content Include="Resources\Accounting_50px.png" />
+    <Content Include="Resources\Action_50px.png" />
+    <Content Include="Resources\Administrative Tools_50px.png" />
+    <Content Include="Resources\Book Shelf_50px.png" />
+    <Content Include="Resources\Books_48px.png" />
+    <Content Include="Resources\Books_50px.png" />
+    <Content Include="Resources\Categorize_48px.png" />
+    <Content Include="Resources\Categorize_50px.png" />
+    <Content Include="Resources\Change Theme_50px.png" />
+    <Content Include="Resources\Circled User Male_50px_1.png" />
+    <Content Include="Resources\Cloud Storage_52px.png" />
+    <Content Include="Resources\Data Backup_52px.png" />
+    <Content Include="Resources\Delete File_50px.png" />
+    <Content Include="Resources\Domain_48px.png" />
+    <Content Include="Resources\Edit Row_50px.png" />
+    <Content Include="Resources\Filter_50px.png" />
+    <Content Include="Resources\Globe Earth_48px.png" />
+    <Content Include="Resources\Google Translate_52px.png" />
+    <None Include="Resources\maximize2.png" />
+    <Content Include="Resources\Microsoft Excel_50px.png" />
+    <Content Include="Resources\Outline_50px.png" />
+    <Content Include="Resources\Page Overview 3_50px.png" />
+    <Content Include="Resources\Privacy_52px.png" />
+    <Content Include="Resources\USB Connector_48px.png" />
+    <Content Include="Resources\Verified Account_50px.png" />
+    <Content Include="Resources\Wi-Fi_48px_1.png" />
+    <None Include="Resources\Google Web Search_50px_1.png" />
+    <Content Include="Resources\Medal_52px.png" />
+    <Content Include="Resources\Plus_50px.png" />
+    <Content Include="Resources\Search_50px.png" />
+    <Content Include="Resources\Timer_52px.png" />
+    <Content Include="Resources\Trial Version_52px.png" />
+    <Content Include="Resources\True False_50px.png" />
+    <Content Include="Resources\User Typing Using Typewriter_48px.png" />
+    <Content Include="Resources\User Typing Using Typewriter_50px.png" />
+    <None Include="Resources\Save_50px.png" />
+    <None Include="Resources\Close Window_48px.png" />
+    <Content Include="Resources\Multiply_50px.png" />
+    <None Include="Resources\close.png" />
+    <Content Include="Resources\Combo Chart_50px.png" />
+    <Content Include="Resources\Conference Call_50px.png" />
+    <Content Include="Resources\Delete_52px_1.png" />
+    <Content Include="Resources\Details_50px.png" />
+    <Content Include="Resources\Menu_50px.png" />
+    <None Include="Resources\error404.png" />
+    <Content Include="Resources\Gender Neutral User_50px_2.png" />
+    <Content Include="Resources\Login As User_50px.png" />
+    <Content Include="Resources\Logout Rounded Down_50px.png" />
+    <Content Include="Resources\Settings 3_50px.png" />
+    <Content Include="Resources\Support_50px.png" />
+    <Content Include="Resources\Tags_50px.png" />
+    <None Include="Resources\rocket.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
